@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: Build NEWIFI3 openwrt(LEDE.ver) firmware
+name: Build NEWIFI3 openwrt firmware
 
 on:
   # schedule:
@@ -19,7 +19,7 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: v23.05.5
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
